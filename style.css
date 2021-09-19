@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body::before
+{
+    content:" ";
+    /* background-color: black; */
+    background: url('taj.jpg') ;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    
+    
+     background-size: cover;
+     background-position: center;
+    background-repeat: no-repeat; 
+    /* coor: rgb(160, 148, 148); */
+    
+}
+
+@keyframes amber 
+{
+    0%
+    {
+        transform: scale(1);
+    }
+
+    50%
+    {
+        transform: scale(1.5);
+        font-weight: 900;
+        color: orangered;
+    }
+
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+@keyframes india {
+    0%
+    {
+        transform: scale(1);
+        color: orangered;
+    }
+
+    50%
+    {
+        transform: scale(1.5);
+        color: green;
+    }
+
+    100%
+    {
+        transform: scale(1);
+        color: blue;
+    }
+}
+
+
+
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(80, 79, 83, 0.774);
+    padding: 0 0px;
+    width: 100vw;
+    height: 15vh;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.title
+{
+    /* width: 40%; */
+    display: flex;
+    font-family: 'Grechen Fuemen', cursive;
+    margin-left: 100px;
+    font-size: 31px;
+    font-weight: 700;
+    color: white;
+
+    animation: amber 0.75s linear 0.5s infinite;
+}
+
+.links
+{
+    /* width: 60%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links p{
+    padding: 3px;
+    margin-right: 19px;
+}
+
+.links a
+{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.links .home
+{
+    color: rgb(42, 180, 72);
+    font-weight: bolder;
+}
+
+
+.message
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    /* background-color: black; */
+    width: 50vw;
+    height: 10vh;
+    color: rgb(179, 32, 32);
+    font-weight: bold;
+    font-size: 43px;
+
+
+    position: relative;
+    top: 28vh;
+    left: 25vw;
+
+}
+
+.animation
+{
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: 50px;
+
+    animation: india 1s linear 1s infinite;
+}
+
+.thought
+{
+    /* background-color: black; */
+    color: rgb(51, 68, 143);
+    width: 28vw;
+height: 9vh;
+font-family: 'Pacifico', cursive;
+position: relative;
+top: 26vh;
+left: 36vw;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 32px;
+
+}
+
+.in
+{
+    color: orangered;
+    font-family: 'Acme', sans-serif;
+} 
+
+
+.butt
+{
+    display: flex;
+width: 25vw;
+/* background-color: black; */
+height: 10vh;
+margin: auto;
+justify-content: space-evenly;
+align-items: center;
+position: relative;
+top: 30vh;
+}
+
+.butt1
+{
+        width: 152px;
+        height: 56px;
+        padding: 7px;
+        font-size: 20px;
+        background-color: rgb(190, 103, 183);
+        border-radius: 10px;  
+}
+
+.butt2
+{
+        width: 152px;
+        height: 56px;
+        padding: 7px;
+        font-size: 20px;
+        background-color: rgb(82, 121, 158);
+        border-radius: 10px;  
+}
+
+.butta
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+footer {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    top: 50vh;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width:750px) and (min-width:450px)
+{
+   .title{
+       margin-left:33px;
+   }
+
+    .title p{
+        font-size: 15px;
+    }
+
+    .links a
+    {
+        font-size: 16px;
+    }
+
+
+    .links p
+    {
+        margin-right: 8px;
+    }
+
+    .message
+    {
+        font-size: 24px;
+        width: 71vw;
+        height: 9vh;
+        top: 12vh;
+        left: 15vw;
+    }
+    
+    .animation
+    {
+        font-size: 24px;
+    }
+
+    
+    .thought
+    {
+        top: 13vh;
+        left: 6vw;
+        width: 89vw;
+        height: 9vh;
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    nav
+    {
+        flex-direction: column;
+    }
+    
+    .title
+    {
+        margin-left: -29px;
+        margin-top: 20px;
+    }
+
+    .links
+    {
+        margin-left: 5px;
+    }
+
+    .message
+    {
+        font-size: 21px;
+        width: 100vw;
+        height: 11vh;
+        top: 14vh;
+        left: -1vw;
+    }
+
+    .animation
+    {
+        font-size: 30px;
+    }
+
+    .thought
+    {
+        top: 10vh;
+        left: 6vw;
+        width: 89vw;
+        height: 9vh;
+        font-size: 22px;
+    }
+
+    .butt
+    {
+        width: 70vw;
+        height: 10vh;
+        top: 14vh;
+    }
+
+    .butt1 {
+        width: 93px;
+        height: 36px;
+        padding: 1px;
+        font-size: 14px;
+    }
+
+    .butt2 {
+        width: 93px;
+        height: 36px;
+        padding: 1px;
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media screen and (max-width:1250px) and (min-width:751px)
+{
+    
+    .message {
+        top: 14vh;
+        left: 7vw;
+        width: 91vw;
+        font-size: 28px;
+    }
+
+    .thought
+    {
+        width: 60vw;
+height: 9vh;
+top: 19vh;
+left: 21vw;
+    }
+
+    .butt {
+        width: 51vw;
+        top: 19vh;
+    }
+
+}
